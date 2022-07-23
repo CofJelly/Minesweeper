@@ -9,7 +9,8 @@ namespace WindowsFormsApp1
     public class Game
     {
         private static Game GameInstance;
-
+        public int Width { get; set; }
+        public int Height { get; set; }
         public static Game Instance
         {
             get

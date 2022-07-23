@@ -26,6 +26,8 @@ namespace WindowsFormsApp1
             var currentHeight = 35;
             var width = Int32.Parse(WidthTextBox.Text);
             var height = Int32.Parse(HeightTextBox.Text);
+            Game.Instance.Width = width;
+            Game.Instance.Height = height;
             this.ClientSize = new Size(Math.Max(InitialWidth, width * boxSize + pixelsToEdge * 2), height * boxSize + pixelsToEdge * 2 + currentHeight);
             for(int i = 0;i<width;i++)
             {
